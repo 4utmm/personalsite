@@ -4,11 +4,38 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: rgb(247, 222, 191);
+}
+
+body {
+    height: 0vh;
+}
+
 #HeaderDiv {
-    margin-top: 5vh;
-    height: 40px;
+    display: flex;
+    align-items: center;
+    top: 6vh;
+}
+
+#FooterDiv {
+    bottom: 6vh;
+}
+
+#SiteTitleSpan {
+    font-family: "Source Code Pro",monospace;
+    font-weight: 600;
+    font-size: 2em;
+    letter-spacing: 10px;
+    font-style:oblique;
+    margin-left: 5vw;
 }
 
 .GradientBar {
     background-image: linear-gradient(to right, rgba(213, 141, 102, 1) 0%, 14.896755162241886%, rgba(193, 85, 114, 1) 36.87315634218289%, 71.976401179941%, rgba(214, 203, 225, 1) 100%);
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    height: 4vh;
+    position: absolute;
+    width: 100%;
 }
