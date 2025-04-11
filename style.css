@@ -60,4 +60,13 @@ body {
     border-right: 5px solid rgb(114, 100, 85);
     padding: 10px; 
     border-radius: 20px;
+    opacity: 1;
+    animation: fade 4s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0.25 }
+  30%,70% { opacity: 0.8 }
+  50% { opacity: 0.9;}
 }
