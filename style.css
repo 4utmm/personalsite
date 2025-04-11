@@ -4,11 +4,69 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: rgb(247, 222, 191);
+}
+
+body {
+    height: 0vh;
+}
+
 #HeaderDiv {
-    margin-top: 5vh;
-    height: 40px;
+    display: flex;
+    align-items: center;
+    top: 6vh;
+}
+
+#FooterDiv {
+    bottom: 6vh;
+}
+
+#SiteTitleSpan {
+    font-family: "Source Code Pro",monospace;
+    font-weight: 600;
+    font-size: 35px;
+    letter-spacing: 10px;
+    font-style:oblique;
+    margin-left: 5vw;
 }
 
 .GradientBar {
     background-image: linear-gradient(to right, rgba(213, 141, 102, 1) 0%, 14.896755162241886%, rgba(193, 85, 114, 1) 36.87315634218289%, 71.976401179941%, rgba(214, 203, 225, 1) 100%);
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    height: 40px;
+    position: absolute;
+    width: 100%;
+}
+
+#BodyContent {
+    margin-left: 15%;
+    width: 70%;
+    margin-top: 7.5%;
+    height: 70%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid rgba(206, 185, 160, 0.301);
+    border-right: 2px solid rgba(206, 185, 160, 0.301);
+    border-radius: 5px;
+}
+
+#UnderConstruction {
+    width: 40vw;
+    border-left: 5px solid rgb(114, 100, 85);
+    border-right: 5px solid rgb(114, 100, 85);
+    padding: 10px; 
+    border-radius: 20px;
+    opacity: 1;
+    animation: fade 4s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0.25 }
+  30%,70% { opacity: 0.8 }
+  50% { opacity: 0.9;}
 }
