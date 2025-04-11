@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#HeaderDiv {
+    margin-top: 5vh;
+    height: 40px;
+}
+
+.GradientBar {
+    background-image: linear-gradient(to right, rgba(213, 141, 102, 1) 0%, 14.896755162241886%, rgba(193, 85, 114, 1) 36.87315634218289%, 71.976401179941%, rgba(214, 203, 225, 1) 100%);
+}
